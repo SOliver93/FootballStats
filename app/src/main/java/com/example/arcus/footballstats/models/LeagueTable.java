@@ -1,6 +1,6 @@
 package com.example.arcus.footballstats.models;
 
-public class League {
+public class LeagueTable {
     public int position;
     public short teamName;
     public int playedGames;
