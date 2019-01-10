@@ -1,19 +1,19 @@
 package com.example.arcus.footballstats.models;
 
 public class Leagues {
-    public int caption;
-    public int league;
+    public short caption;
+    public short league;
     public int year;
     public int currentMatchday;
     public int numberOfMatchdays;
     public int numberOfTeams;
     public int numberOfGames;
-    public int lastUpdated;
+    public short lastUpdated;
 
-    public int getCaption() {
+    public short getCaption() {
         return caption;
     }
-    public int getLeague() {
+    public short getLeague() {
         return league;
     }
     public int getYear() {
@@ -31,7 +31,7 @@ public class Leagues {
     public int getNumberOfGames() {
         return numberOfGames;
     }
-    public int getLastUpdated() {
+    public short getLastUpdated() {
         return lastUpdated;
     }
 
@@ -44,5 +44,5 @@ public class Leagues {
     public void setnumberOfMatchdays(int numberOfMatchdays) {this.numberOfMatchdays = numberOfMatchdays;}
     public void setnumberOfTeams(int numberOfTeams) {this.numberOfTeams = numberOfTeams;}
     public void setnumberOfGames(int numberOfGames) {this.numberOfGames = numberOfGames;}
-    public void setlastUpdated(int lastUpdated) {this.lastUpdated = lastUpdated;}
+    public void setlastUpdated(short lastUpdated) {this.lastUpdated = lastUpdated;}
 }

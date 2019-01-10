@@ -1,4 +1,4 @@
 package com.example.arcus.footballstats.network;
 
-public class ApiLeagues {
+public class ApiFixtures {
 }

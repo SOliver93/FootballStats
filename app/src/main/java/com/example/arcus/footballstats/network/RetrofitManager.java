@@ -5,7 +5,6 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class RetrofitManager {
     static private RetrofitManager instance;
-    private ApiLeagues leagues;
 
     private RetrofitManager()
     {
@@ -13,8 +12,6 @@ public class RetrofitManager {
                 .baseUrl("http://api.football-data.org/v1/competitions")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
-
-        leagues=retrofit.create(ApiLeagues.class);
     }
 
     public static RetrofitManager getInstance()
@@ -24,10 +21,5 @@ public class RetrofitManager {
             instance = new RetrofitManager();
         }
         return instance;
-    }
-
-    public ApiLeagues getLeague()
-    {
-        return leagues;
     }
 }
