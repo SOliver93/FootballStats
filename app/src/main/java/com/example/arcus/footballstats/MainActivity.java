@@ -7,13 +7,13 @@ import android.view.View;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    ViewPager viewPagerStandings;
+    ViewPager viewLeagues;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        viewPagerStandings = findViewById(R.id.viewLeagues);
+        viewLeagues = findViewById(R.id.viewLeagues);
 
     }
 }
